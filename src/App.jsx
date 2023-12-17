@@ -1,11 +1,14 @@
 import './App.css';
-import { AuthLayout } from './layouts/AuthLayout/AuthLayout';
-import { LoginPage } from './pages/LoginPage';
+
+import {Route, Routes} from 'react-router-dom'
+import Sidebar from './components/Sidebar/Sidebar';
 
 function App() {
   return (
     <div className="App">
-      <LoginPage />
+        <Routes>
+          <Route path='/' element={<Sidebar/>}/>
+        </Routes>
     </div>
   );
 }
