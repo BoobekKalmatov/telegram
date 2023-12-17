@@ -1,10 +1,14 @@
 
 import './App.css';
+import {Route, Routes} from 'react-router-dom'
+import Sidebar from './components/Sidebar/Sidebar';
 
 function App() {
   return (
     <div className="App">
-      Hello react
+        <Routes>
+          <Route path='/' element={<Sidebar/>}/>
+        </Routes>
     </div>
   );
 }
